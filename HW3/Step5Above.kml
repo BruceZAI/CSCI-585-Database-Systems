@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Folder>
+<name>Libraries</name>
+<Placemark><name>SEL</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28899,34.02003</coordinates></Point>
+</Placemark>
+<Placemark><name>HTAL</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28792,34.01947</coordinates></Point>
+</Placemark>
+<Placemark><name>USCAL</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28560,34.01889</coordinates></Point>
+</Placemark>
+<Placemark><name>AVCLL</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28413,34.01892</coordinates></Point>
+</Placemark>
+<Placemark><name>DML</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28399,34.02021</coordinates></Point>
+</Placemark>
+<Placemark><name>LL</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28314,34.02164</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder>
+<name>Fountains</name>
+<Placemark><name>LDSGF</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.29064,34.02022</coordinates></Point>
+</Placemark>
+<Placemark><name>OHF</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28892,34.02057</coordinates></Point>
+</Placemark>
+<Placemark><name>MHF</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28659,34.01871</coordinates></Point>
+</Placemark>
+<Placemark><name>PAFSF</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28529,34.02016</coordinates></Point>
+</Placemark>
+<Placemark><name>PMF</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28455,34.02056</coordinates></Point>
+</Placemark>
+<Placemark><name>GF</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28330,34.02220</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder>
+<name>Home</name>
+<Placemark><name>HOME</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28564,34.03421</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Placemark>
+<name>ConvexHull</name>
+<Style>
+      <LineStyle>
+        <color>7fff00ff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+</Style>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-118.28659,34.01871 -118.29064,34.02022 -118.28564,34.03421 -118.28314,34.02164 -118.28413,34.01892 -118.28659,34.01871</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon> 
+</Placemark>
+
+<Placemark>
+<name>N1GF</name>
+<description>N1</description>
+<Style>
+<LineStyle>
+        <color>ffff0000</color>
+        <width>3</width>
+      </LineStyle>
+</Style>
+<LineString>
+<coordinates>-118.28564,34.03421 -118.2833,34.0222</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>N2LL</name>
+<description>N2</description>
+<Style>
+<LineStyle>
+        <color>ffff0000</color>
+        <width>3</width>
+      </LineStyle>
+</Style>
+<LineString>
+<coordinates>-118.28564,34.03421 -118.28314,34.02164</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>N3PMF</name>
+<description>N3</description>
+<Style>
+<LineStyle>
+        <color>ffff0000</color>
+        <width>3</width>
+      </LineStyle>
+</Style>
+<LineString>
+<coordinates>-118.28564,34.03421 -118.28455,34.02056</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>N4OHF</name>
+<description>N4</description>
+<Style>
+<LineStyle>
+        <color>ffff0000</color>
+        <width>3</width>
+      </LineStyle>
+</Style>
+<LineString>
+<coordinates>-118.28564,34.03421 -118.28892,34.02057</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>N5PAFSF</name>
+<description>N5</description>
+<Style>
+<LineStyle>
+        <color>ffff0000</color>
+        <width>3</width>
+      </LineStyle>
+</Style>
+<LineString>
+<coordinates>-118.28564,34.03421 -118.28529,34.02016</coordinates>
+</LineString>
+</Placemark>
+
+</Document></kml>

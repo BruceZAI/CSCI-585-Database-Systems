@@ -1,0 +1,33 @@
+CREATE TABLE AREAS (
+	name VARCHAR(30), 
+	geom geometry);
+	
+INSERT INTO AREAS VALUES
+('SEL', 'POINT(-118.28899 34.02003)'),
+('HTAL', 'POINT(-118.28792 34.01947)'),
+('USCAL', 'POINT(-118.28560 34.01889)'),
+('AVCLL', 'POINT(-118.28413 34.01892)'),
+('DML', 'POINT(-118.28399 34.02021)'),
+('LL', 'POINT(-118.28314 34.02164)'),
+('LDSGF', 'POINT(-118.29064 34.02022)'),
+('OHF', 'POINT(-118.28892 34.02057)'),
+('MHF', 'POINT(-118.28659 34.01871)'),
+('PAFSF', 'POINT(-118.28529 34.02016)'),
+('PMF', 'POINT(-118.28455 34.02056)'),
+('GF', 'POINT(-118.28330 34.02220)'),
+('HOME', 'POINT(-118.28564 34.03421)');
+	
+
+
+
+
+-- Computes the convex hull of a geometry
+SELECT ST_AsText(ST_ConvexHull(ST_Collect(geom))) FROM AREAS;
+
+-- K-Nearest Neighbor Query
+SELECT name, ST_Astext(geom), ST_Distance(geom,'POINT(-118.28564 34.03421)') 
+FROM AREAS
+WHERE name <> 'HOME' 
+ORDER BY ST_Distance(geom,'POINT(-118.28564 34.03421)') 
+LIMIT 5;
+
